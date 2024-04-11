@@ -1,4 +1,4 @@
-﻿using calculator;
+﻿using Fundamentals.Common.Calculator; 
 
 Calculator calc = new Calculator();
 

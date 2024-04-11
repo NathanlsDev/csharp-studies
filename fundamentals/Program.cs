@@ -1,4 +1,4 @@
-﻿using fundamentals.Models;
+﻿using Fundamentals.Common.Person; 
 
 Person citizen = new Person();
 
