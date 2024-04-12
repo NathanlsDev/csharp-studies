@@ -1,18 +1,20 @@
 ﻿using ExploringCSharp.Models;
 
-Person citizen = new Person(name:"Francesco", lastname:"Virgolini");
+Person citizen = new Person(name:"Francesco", lastName:"Virgolini");
+Person student = new Person(name:"Derp", lastName:"Derpson");
+Courses englishCourse = new Courses();
+
 citizen.Age = 99;
 citizen.Presentation();
 
-Person student = new Person(name:"Derp", lastname:"Derpson");
 student.Age = 23;
 
-Courses englishCourse = new Courses();
 englishCourse.Name = "English B2";
 englishCourse.Students = new List<Person>();
-
 englishCourse.AddStudent(citizen);
 englishCourse.AddStudent(student);
 englishCourse.ShowEnrolledStudents();
 
 
+decimal monetaryValue = 1450.2M;
+Console.WriteLine($"{monetaryValue:C}");

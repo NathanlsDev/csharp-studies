@@ -54,7 +54,7 @@ namespace ExploringCSharp.Models
 
         public void Presentation()
         {
-            Console.WriteLine($"Name: {FullName}, Age: {Age}");
+            Console.WriteLine($"Name: {FullName}, Age: {Age}\n");
         }
     }
 }
