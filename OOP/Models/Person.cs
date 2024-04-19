@@ -8,9 +8,10 @@ namespace OOP.Models
     public class Person
     {
         public string Name { get; set; }
+        public string Email { get; set; }
         public int Age { get; set; }
 
-        public void Salutations ()
+        public virtual void Salutations ()
         {
             Console.WriteLine ($"Hello my name is {Name}, and i'm {Age} years old.");
         }
