@@ -1,17 +1,29 @@
 ﻿using OOP.Models;
 
-Student apprentice = new Student();
-apprentice.Name = "Derpson";
-apprentice.Age = 15;
-apprentice.Email = "derpson@example.com";
-apprentice.Grade = 8.7;
-apprentice.Salutations();
+TransactionAcc acc = new TransactionAcc();
 
-Teacher Professor = new Teacher();
-Professor.Name = "Carlos";
-Professor.Age = 150;
-Professor.Salary = 4520;
-Professor.Salutations();
+acc.Credit(400);
+acc.ShowBalance();
+
+
+
+
+
+
+
+
+// Student apprentice = new Student();
+// apprentice.Name = "Derpson";
+// apprentice.Age = 15;
+// apprentice.Email = "derpson@example.com";
+// apprentice.Grade = 8.7;
+// apprentice.Salutations();
+
+// Teacher Professor = new Teacher();
+// Professor.Name = "Carlos";
+// Professor.Age = 150;
+// Professor.Salary = 4520;
+// Professor.Salutations();
 
 
 
