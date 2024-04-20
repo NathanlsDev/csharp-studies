@@ -7,6 +7,11 @@ namespace OOP.Models
 {
     public class Student : Person
     {
+        public Student(string name) : base (name)
+        {
+
+        }
+
         public double Grade { get; set; }
 
         public override void Salutations()

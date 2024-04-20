@@ -8,10 +8,6 @@ acc.ShowBalance();
 
 
 
-
-
-
-
 // Student apprentice = new Student();
 // apprentice.Name = "Derpson";
 // apprentice.Age = 15;

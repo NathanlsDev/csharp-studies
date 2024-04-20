@@ -7,6 +7,11 @@ namespace OOP.Models
 {
     public class Teacher : Person
     {
+        public Teacher(string name) : base(name)
+        {
+
+        }
+        
         public decimal Salary { get; set; }
 
         public override void Salutations()
