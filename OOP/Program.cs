@@ -1,7 +1,15 @@
-﻿using OOP.Models;
+﻿using OOP.Interfaces;
+using OOP.Models;
 
-var pc = new Computer();
-Console.WriteLine(pc.ToString());
+ICalculator calc = new Calculator();
+Console.WriteLine(calc.Division(40, 4));
+
+
+
+
+
+// var pc = new Computer();
+// Console.WriteLine(pc.ToString());
 
 
 
