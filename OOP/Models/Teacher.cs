@@ -7,14 +7,18 @@ namespace OOP.Models
 {
     public class Teacher : Person
     {
-        public Teacher(string name) : base(name)
+        public Teacher()
+        {
+            
+        }
+        public Teacher(string name) : base (name)
         {
 
         }
         
         public decimal Salary { get; set; }
 
-        public sealed override void Salutations()
+        public override void Salutations()
         {
             Console.WriteLine($"Hello my name is {Name}, I'm {Age} years old, And my salary is: {Salary}");
         }

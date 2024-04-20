@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 namespace OOP.Models
 {
     public class Person
-    {
+    {   
+        public Person ()
+        {
+
+        }
         public Person(string name)
         {
             Name = name;

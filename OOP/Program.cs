@@ -1,9 +1,15 @@
 ﻿using OOP.Models;
 
-TransactionAcc acc = new TransactionAcc();
+var pc = new Computer();
+Console.WriteLine(pc.ToString());
 
-acc.Credit(400);
-acc.ShowBalance();
+
+
+
+// TransactionAcc acc = new TransactionAcc();
+
+// acc.Credit(400);
+// acc.ShowBalance();
 
 
 
