@@ -14,7 +14,7 @@ namespace OOP.Models
         
         public decimal Salary { get; set; }
 
-        public override void Salutations()
+        public sealed override void Salutations()
         {
             Console.WriteLine($"Hello my name is {Name}, I'm {Age} years old, And my salary is: {Salary}");
         }
