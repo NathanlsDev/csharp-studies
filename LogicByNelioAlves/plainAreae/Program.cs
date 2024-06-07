@@ -12,17 +12,19 @@ namespace plainArea
     {
         static void Main(string[] args)
         {
+            double landWidth, landLength, meterValue, totalLandArea, totalLandPrice;
+
             Console.WriteLine("Type the land width:");
-            double landWidth = double.Parse(Console.ReadLine());
+            landWidth = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Type the land length:");
-            double landLength = double.Parse(Console.ReadLine());
+            landLength = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Price per square meter:");
-            double meterValue = double.Parse(Console.ReadLine());
+            meterValue = double.Parse(Console.ReadLine());
 
-            double totalLandArea = landWidth * landLength;
-            double totalLandPrice = totalLandArea * meterValue;
+            totalLandArea = landWidth * landLength;
+            totalLandPrice = totalLandArea * meterValue;
 
             Console.WriteLine($"AREA = {totalLandArea.ToString("F2")}");
             Console.WriteLine($"PRICE = {totalLandPrice.ToString("F2")}");            
