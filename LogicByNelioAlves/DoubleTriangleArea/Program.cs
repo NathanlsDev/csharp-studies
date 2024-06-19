@@ -23,16 +23,13 @@ namespace DoubleArea
             y.B = double.Parse(Console.ReadLine());
             y.C = double.Parse(Console.ReadLine());
 
-            CalculateTraingleArea(x, y);
+            CalcArea(x, y);
         }
 
-        static void CalculateTraingleArea(Triangle x, Triangle y)
+        static void CalcArea(Triangle x, Triangle y)
         {
-            double p = (x.A + x.B + x.C) / 2;
-            double areaX = Math.Sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
-
-            p = (y.A + y.B + y.C) / 2;
-            double areaY = Math.Sqrt(p * (p - y.A) * (p - y.B) * (p - y.C));
+            double areaX = x.CalculateTraingleArea();
+            double areaY = y.CalculateTraingleArea();
 
             DisplayAreaMessage(areaX, areaY);
             DisplayGreatherTriangleArea(areaX, areaY);
