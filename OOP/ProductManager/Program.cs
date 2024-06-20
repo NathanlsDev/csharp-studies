@@ -7,17 +7,17 @@ namespace ProductManager
     {
         static void Main(string[] args)
         {
-            Product product = new Product();
-
             Console.WriteLine("\nEnter product data\n");
             Console.Write("Name: ");
-            product.Name = Console.ReadLine();
+            string name = Console.ReadLine();
 
             Console.Write("Price: ");
-            product.Price = double.Parse(Console.ReadLine());
+            double price = double.Parse(Console.ReadLine());
 
             Console.Write("Quantity in stock: ");
-            product.Qtd = int.Parse(Console.ReadLine());
+            int qtd = int.Parse(Console.ReadLine());
+
+            Product product = new Product(name, price, qtd);
 
             DisplayProductData(product);
         }

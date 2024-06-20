@@ -6,6 +6,13 @@
         public double Price;
         public int Qtd;
 
+        public Product(string name, double price, int qtd) 
+        { 
+            Name = name;
+            Price = price;
+            Qtd = qtd;
+        }
+
         public double TotalValueStock(double price, int qtd) 
         {
             return price * qtd;
